@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samiksha Nikam | Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+  <!-- Dark Mode Toggle -->
+  <div class="theme-toggle">
+    <label class="switch">
+      <input type="checkbox" id="toggle-dark">
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+    <h1>Hi, I'm Samiksha Nikam</h1>
+    <p>2nd Year Computer Science Student | Web Developer | Data Science Enthusiast</p>
+  </header>
+
+  <section id="about" class="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+      I’m a passionate 2nd year Computer Science student with a strong interest in web development, data science, and problem-solving. I love building projects and learning new technologies to expand my skill set.
+    </p>
+  </section>
+
+  <section id="skills" class="skills" data-aos="fade-up">
+    <h2>Skills <i class="fas fa-code"></i></h2>
+    <ul>
+      <li><strong>Languages:</strong> Python, Java</li>
+      <li><strong>Web:</strong> HTML, CSS, JavaScript</li>
+      <li><strong>Tools:</strong> Git, VS Code</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects" data-aos="fade-up">
+    <h2>Projects <i class="fas fa-folder-open"></i></h2>
+    <div class="project-item">
+      <h3>Disney+ Clone</h3>
+      <p>Developed a Disney+ clone using HTML, CSS, JavaScript, and React framework.</p>
+      <a href="https://github.com/Samiksha-nik/Disney-Clone.git" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project-item">
+      <h3>VirtualR Website</h3>
+      <p>Built a small-scale website using HTML, Tailwind CSS, and React.js.</p>
+      <a href="https://github.com/Samiksha-nik/virtualR-web.git" target="_blank">View on GitHub</a>
+    </div>
+  </section>
+
+  <section id="education" class="education" data-aos="fade-up">
+    <h2>Education <i class="fas fa-graduation-cap"></i></h2>
+    <p>Bachelor of Computer Science, Thakur College of Science and Commerce (2nd Year)</p>
+  </section>
+
+  <section id="certifications" class="certifications" data-aos="fade-up">
+    <h2>Certifications <i class="fas fa-certificate"></i></h2>
+    <div class="cert-item">Python Bootcamp - Jobaaj Learnings</div>
+    <div class="cert-item">Pandas Data Operations Mastery - Jobaaj Learnings</div>
+    <div class="cert-item">Excel A-Z Course - Jobaaj Learnings</div>
+    <div class="cert-item">Java Training - Spoken tutorial project at IIT Bombay</div>
+  </section>
+
+  <section id="experience" class="experience" data-aos="fade-up">
+    <h2>Experience <i class="fas fa-briefcase"></i></h2>
+    <div class="exp-item">
+      <p><strong>Frontend Intern</strong> – Ratnamace IT Solutions (4 months)</p>
+      <p>Contributed to the development of the homepage using HTML, CSS, JavaScript, and React.js.</p>
+    </div>
+    <div class="exp-item">
+        <p><strong>Frontend Intern-Virtual Internship</strong> – CODEXINTERN  (1 month)</p>
+        <p>completed 3 mini projects to enhance my front end development skills</p>
+      </div>
+  </section>
+
+  <section id="contact" class="contact" data-aos="fade-up">
+    <h2>Contact <i class="fas fa-envelope"></i></h2>
+    <p>Email: <a href="mailto:nikamsamiksha43@gmail.com">nikamsamiksha43@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Samiksha-nik" target="_blank">github.com/Samiksha-nik</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/samiksha-nikam-774960302/" target="_blank">linkedin.com/in/samiksha-nikam</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Samiksha Nikam | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    const toggle = document.getElementById('toggle-dark');
+    toggle.addEventListener('change', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>
